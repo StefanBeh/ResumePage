@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mein Lebenslauf</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<style>
+body {
+	background: black;
+	color: white;
+	font-family: Arial;
+}
+table {
+  border-collapse: collapse;
+}
+table, th, td {
+  border: 1px solid;
+}
+a {
+	color: yellow;
+}
+p {
+	margin-left: 10px;
+}
+</style>
+<nav style="display: flex; justify-content: space-between; align-items:flex-start" >
+	<h1 style="margin: 0px">
+		<a style="color: white" href="./index.html">Home</a>
+	</h1>
+	<img src="./icon.png" width="50px" height="50px"/>
+</nav>
+<header>
+	<h1>Teamarbeit und Projektmanagement</h1>
+</header>
+<body>
+	<h2>Jira</h2>
+	<ol>
+		<li><a href="#overview">Was ist Jira und wofür wird es verwendet?</a></li>
+		<li><a href="#surface">Die Oberfläche</a></li>
+		<li><a href="#new_project">Ein Projekt anlegen</a></li>
+		<li><a href="#kanban">Kanban oder Sprint?</a></li>
+		<li><a href="#epics">"Epics" verstehen und verwenden</a></li>
+		<li><a href="#storys">Mit "Storys" das "Warum?" klären</a></li>
+		<li><a href="#tasks">Tasks</a></li>
+		<li><a href="#bugs">Bugs</a></li>
+		
+	</ol>
+	<section id="overview">	
+		<h2>Was ist Jira und wofür wird es verwendet?</h2>
+		<p>Jira ist eine Projektmanagement-Software von Atlassian, die Teams hilft, Projekte effizient zu planen, zu verfolgen und abzuschließen. Besonders geeignet ist sie für agile Projektmethoden wie Scrum und Kanban, da sie Funktionen wie Sprint-Planung, Aufgabenverwaltung und visuelle Boards bietet.
+
+			Mit Jira können Teams Projektaufgaben als sogenannte “Tickets” erstellen, priorisieren und mit Verantwortlichkeiten versehen. Fortschritte werden in Echtzeit angezeigt, und Berichte sowie Dashboards liefern Einblicke in den Projektstatus, Arbeitslasten und mögliche Engpässe. Dank ihrer Anpassungsfähigkeit lässt sich Jira für unterschiedliche Projekte und Workflows individuell konfigurieren und durch Plugins erweitern, was sie zu einer der führenden Lösungen im modernen Projektmanagement macht.</p>
+	</section>
+	<hr style="width: 100px; color:yellow" />
+	<section id="surface">	
+		<h2>Die Oberfläche</h2>
+	</section>
+	<hr style="width: 100px; color:yellow" />
+	<section id="new_project">	
+		<h2>Ein Projekt anlegen</h2>
+	</section>
+	<hr style="width: 100px; color:yellow" />
+	<section id="kanban">
+		<h2>Kanban oder Sprint: Was ist der Unterschied?</h2>
+
+    <h2>Kanban</h2>
+    <p>Kanban ist ein flexibles System, das sich auf kontinuierlichen Arbeitsfluss und visuelle Verwaltung konzentriert. Es eignet sich besonders für Teams, die keine festen Deadlines haben.</p>
+    <ul>
+        <li><strong>Arbeitsweise:</strong> Aufgaben werden auf einem Board dargestellt, das Spalten wie "To Do", "In Progress" und "Done" enthält.</li>
+        <li><strong>Fokus:</strong> Optimierung des Workflows, Reduzierung von Engpässen.</li>
+        <li><strong>Wann geeignet:</strong> Für Teams mit sich schnell ändernden Prioritäten.</li>
+    </ul>
+
+    <h2>Sprint</h2>
+    <p>Ein Sprint ist ein fester Zeitraum (meist 1–4 Wochen), in dem ein Team eine definierte Menge an Arbeit erledigt. Es ist Teil der agilen Scrum-Methode.</p>
+    <ul>
+        <li><strong>Arbeitsweise:</strong> Ein Backlog wird zu Beginn des Sprints priorisiert, und das Team verpflichtet sich, diese Arbeit abzuschließen.</li>
+        <li><strong>Fokus:</strong> Erreichen klarer Ziele innerhalb eines Zeitrahmens.</li>
+        <li><strong>Wann geeignet:</strong> Für Teams mit planbaren Aufgaben und festen Deadlines.</li>
+    </ul>
+
+    <h2>Vergleich</h2>
+    <table border="1" style="border-collapse: collapse; width: 100%; text-align: left;">
+        <thead>
+            <tr>
+                <th>Merkmal</th>
+                <th>Kanban</th>
+                <th>Sprint</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><strong>Flexibilität</strong></td>
+                <td>Sehr flexibel, Änderungen jederzeit möglich</td>
+                <td>Weniger flexibel, Arbeit im Sprint bleibt konstant</td>
+            </tr>
+            <tr>
+                <td><strong>Fokus</strong></td>
+                <td>Kontinuierlicher Workflow</td>
+                <td>Feste Ziele pro Zeitraum</td>
+            </tr>
+            <tr>
+                <td><strong>Planung</strong></td>
+                <td>On-Demand</td>
+                <td>Vor jedem Sprint</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <h2>Fazit</h2>
+    <p>Kanban ist ideal für kontinuierliche Prozesse, während Sprints besser für klare, planbare Ziele geeignet sind. Die Wahl hängt von den Bedürfnissen und Arbeitsweisen deines Teams ab.</p>
+	
+	</section>
+	<hr style="width: 100px; color:yellow" />
+	<section id="epics">	
+		<h2>"Epics" verstehen und verwenden</h2>
+    <p>Epics sind größere Arbeitseinheiten, die in kleinere Aufgaben (z. B. Stories oder Tasks) unterteilt werden. Sie repräsentieren langfristige Ziele und helfen, den Fortschritt zusammenhängender Arbeiten zu organisieren.</p>
+
+    <h3>Epics verwenden</h3>
+    <ul>
+        <li><strong>Epic erstellen:</strong> Wähle den Issue-Typ "Epic", gib einen Namen und eine Beschreibung ein.</li>
+        <li><strong>Aufgaben zuordnen:</strong> Im Feld "Epic Link" können Stories oder Tasks einem Epic zugewiesen werden.</li>
+        <li><strong>Fortschritt überwachen:</strong> Nutze Burndown-Charts oder Roadmaps, um den Status zu verfolgen.</li>
+    </ul>
+
+    <h3>Beispiel:</h3>
+    <p><strong>Epic:</strong> "Benutzerregistrierung verbessern"</p>
+    <ul>
+        <li>Neues Anmeldeformular entwickeln</li>
+        <li>E-Mail-Bestätigungen implementieren</li>
+        <li>Social-Login hinzufügen</li>
+    </ul>
+	</section>
+	<hr style="width: 100px; color:yellow" />
+	<section id="storys">
+		<h2>Mit "Storys" das "Warum?" klären</h2>
+		<p style="margin-left: 10px">
+			Eine Story beschreibt den Wunsch nach einem Feature aus Sicht des Endnutzers. Zum Beispiel "Ich möchte benachrichtigt werden, wenn ich nicht mehr genug Material auf Lager habe." oder "Ich möchte Artikel zu meinem Warenkorb hinzufügen können."
+		</p>
+		<p>
+			Diese Herangehensweise ermöglicht es dem Team, mit dem Ziel vor Augen, die notwendigen Schritte in kleine Aufgaben (Tasks) herunter zu brechen.
+		</p>
+	</section>
+	<hr style="width: 100px; color:yellow" />
+	<section id="tasks">
+		<h2>Tasks</h2>
+		<p>>Ein <strong>Task</strong> ist eine spezifische Arbeitseinheit in Jira, die erledigt werden muss, um ein Ziel zu erreichen. Tasks sind detaillierter als Storys und dienen oft dazu, die technische Umsetzung einer Story oder eines Epics zu beschreiben.</p>
+
+    <h3>Wie unterscheidet sich ein Task von einer Story?</h3>
+    <ul>
+        <li><strong>Story:</strong> Beschreibt das "Warum?" und den Nutzen für den Endnutzer.</li>
+        <li><strong>Task:</strong> Beschreibt das "Wie?" und konzentriert sich auf die konkrete Umsetzung der Arbeit.</li>
+    </ul>
+
+    <h3>Beispiel:</h3>
+    <p><strong>Story:</strong> "Als Benutzer möchte ich mich mit meiner E-Mail-Adresse registrieren können, um Zugang zur Plattform zu erhalten."</p>
+    <p><strong>Tasks:</strong></p>
+    <ul>
+        <li>Datenbank für Benutzerkonten erstellen</li>
+        <li>Frontend-Anmeldeformular implementieren</li>
+        <li>API zur Benutzerregistrierung entwickeln</li>
+    </ul>
+
+    <h3>Warum sind Tasks wichtig?</h3>
+    <p>Tasks zerlegen die Arbeit in kleine, umsetzbare Schritte, die leicht zuzuweisen und nachzuverfolgen sind. Sie helfen Teams, den technischen Fortschritt besser zu organisieren und zu planen.</p>
+	
+	</section>
+	<hr style="width: 100px; color:yellow" />
+	<section id="bugs">
+		<h2>Bugs</h2>
+		<p>Ein <strong>Bug</strong> ist ein Fehler oder Defekt in einem System, der verhindert, dass es wie vorgesehen funktioniert. In Jira wird ein Bug als eigenständiger Vorgangstyp behandelt, um die Identifikation, Nachverfolgung und Behebung solcher Probleme zu erleichtern.</p>
+
+    <h2>Wozu dient ein Bug?</h2>
+    <ul>
+        <li><strong>Dokumentation:</strong> Detaillierte Beschreibung eines Problems.</li>
+        <li><strong>Priorisierung:</strong> Bugs können je nach Schweregrad (z. B. kritisch, hoch, mittel, niedrig) priorisiert werden.</li>
+        <li><strong>Nachverfolgbarkeit:</strong> Verknüpft Bugs mit betroffenen Features, Storys oder Epics.</li>
+    </ul>
+
+    <h2>Wie wird ein Bug erstellt?</h2>
+    <ol>
+        <li>Wähle den Vorgangstyp "Bug".</li>
+        <li>Beschreibe das Problem: Was passiert und was sollte passieren?</li>
+        <li>Füge relevante Informationen hinzu, wie Schritte zur Reproduktion, Screenshots oder Logs.</li>
+        <li>Weise den Bug einem Entwickler oder Team zu.</li>
+    </ol>
+
+    <h2>Beispiel:</h2>
+    <p><strong>Bug:</strong> "Login schlägt fehl, wenn Sonderzeichen im Passwort enthalten sind."</p>
+    <ul>
+        <li><strong>Beschreibung:</strong> Benutzer können sich nicht einloggen, wenn ihr Passwort Sonderzeichen wie "@" oder "$" enthält.</li>
+        <li><strong>Schritte zur Reproduktion:</strong> 
+            <ol>
+                <li>Gehe zur Login-Seite.</li>
+                <li>Gib eine E-Mail-Adresse und ein Passwort mit Sonderzeichen ein.</li>
+                <li>Klicke auf "Login".</li>
+            </ol>
+        </li>
+    </ul>
+
+    <h2>Fazit</h2>
+    <p>Bugs in Jira helfen Teams, Probleme strukturiert zu erfassen, zu priorisieren und zu beheben, um die Qualität des Systems sicherzustellen.</p>
+	</section>
+</body>
+</html>

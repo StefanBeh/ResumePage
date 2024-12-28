@@ -12,12 +12,24 @@ body {
 	color: white;
 	font-family: Arial;
 }
-
+a {
+	color: yellow;
+}
+p {
+	margin-left: 10px;
+}
+h1 {
+	font-size: 3em;
+}
 </style>
+<nav style="display: flex; justify-content: space-between; align-items:flex-start" >
+	<h2>Stefan Behling</h2>
+	<img src="./icon.png" width="50px" height="50px"/>
+</nav>
 <body>
     <header>
-        <h1>Stefan Behling</h1>
-				<div style="background: yellow; color: black; width: 13em">
+        
+				<div style="background: yellow; color: black; width: 14em">
 					<p><i>Tech-Enthusiast & Entwickler</i></p>
 				</div>
         
@@ -26,42 +38,66 @@ body {
         <h1>Python for everything</h1>
         <p>Mein Name ist Stefan Behling und ich liebe die Möglichkeiten, die Python für alle Projekte bereitstellt.</p>
     </section>
+		<br />
     <section id="experience">
         <h1>Woran ich gerade arbeite</h1>
         <ul>
             <li>
-                <h3>Qualitätsdatenbank im Django Framework</h3>
+                <h2>Qualitätsdatenbank im Django Framework</h2>
                 <p>Eine Datenbank zur statistischen Auswertung von fehlerhaften Teilen innerhalb der Produktion
 									<a href="./quality.html">Mehr...</a>
 								</p> 
             </li>
             <li>
-                <h3>Produktions-Dashboard</h3>
+                <h2>Produktions-Dashboard</h2>
                 <p>Datenbank gestütztes Dashboard mit integrierter Kapazitätsplanung im Kanban Style und Anbindung an das ERP System
 									<a href="./dashboard.html">Mehr...</a>
 								</p>
             </li>
 						<li>
-                <h3>Automatisierung von täglichen Aufgaben und Workflows</h3>
+                <h2>Automatisierung von täglichen Aufgaben und Workflows</h2>
                 <p>Frühwarnsystem für Prototypen, die in der Produktion zu Verzögerungen führen können
-									<a href="../">Mehr...</a>
+									<a href="./automation.html">Mehr...</a>
 								</p>
             </li>
         </ul>
     </section>
+		<br />
     <section id="skills">
-        <h2>Fähigkeiten</h2>
+        <h1>Fähigkeiten</h1>
         <ul>
             <li>Python</li>
             <li>HTML, CSS, JavaScript</li>
-            <li>Datenanalyse</li>
-            <li>Teamarbeit und Projektmanagement</li>
+            <li>
+							Datenanalyse
+							<a href="./data.html">Mehr...</a>
+						</li>
+            <li>Teamarbeit und Projektmanagement
+							<a href="./projectmanagement.html">Mehr...</a>
+						</li>
         </ul>
     </section>
+		<br />
+		<section id="certificates">
+        <h1>Zertifizierungen</h1>
+				<div id="" style="width:100%; display: flex; flex-direction: column; justify-content: center;align-items: center">
+						<img src="./comptia.png" width="80%"/>
+						<br />
+						<img src="./datascience.jpeg" width="80%"/>
+						<br />
+						<img src="./django.jpeg" width="80%"/>
+						<br />
+						<img src="./powerbi.jpeg" width="80%"/>
+						<br />
+						<img src="./bash.jpeg" width="80%"/>
+				</div>
+				
+        
+    </section>
+		<br />
     <section id="contact">
-        <h2>Kontakt</h2>
+        <h1>Kontakt</h1>
         <p>Email: kontakt@stefanbehling.tech</p>
-        <p>Telefon: +49 123 456 789</p>
     </section>
     <footer>
         <p>© 2024 Stefan Behling. Alle Rechte vorbehalten.</p>
