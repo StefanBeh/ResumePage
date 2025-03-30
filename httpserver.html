@@ -89,10 +89,10 @@ p {
 	  	  Speicherort der Webseite festlegen (DocumentRoot)
 	  	</h2>
 	  	<p>
-	  	  In der Konfigurationsdatei des HTTP Servers wird unter anderem das DocumentRoot angegeben. Die Datei ist unter <span class="code">nano /etc/httpd/conf/httpd.conf</span> zu finden.
+	  	  In der Konfigurationsdatei des HTTP Servers wird unter anderem das DocumentRoot angegeben. Die Datei ist unter <span class="code">nano /etc/httpd/conf/httpd.conf</span> zu finden. Da Strato noch automatisch das CMS Plesk mit installiert und das uns in die Konfiguration pfuscht, deaktivieren wir Plesk zunächst mit <span class="code">mv /etc/httpd/conf/plesk.conf.d/server.conf /etc/httpd/conf/plesk.conf.d/server.conf.bak</span>
 	  	</p>
 	  	<p>
-	  	  Das DocumenRoot ist standardmäßig unter <span class="code">/var/www/html/</span> zu finde.
+	  	  Das DocumenRoot ist standardmäßig unter <span class="code">/var/www/html/</span> zu finden. wird dort eine "index.html" abgelegt, wird diese automatisch als Startseite verwendet.
 	  	</p>
 	  	
 	</section>
