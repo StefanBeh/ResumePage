@@ -78,7 +78,9 @@ p {
 	  	</h3
 	  	<p>
 	  	  Mit
-	  	  <span class="code">sudo ufw allow 80 && sudo ufw allow 443 && sudo ufw allow 22</span> kann man den Port für die Webseite und SSH freischalten.
+	  	  <span class="code">sudo ufw allow 80</span>
+	  	  <span class="code">sudo ufw allow 443</span>
+        <span class="code">sudo ufw allow 22</span> kann man den Port für die Webseite und SSH freischalten.
 	  	</p>
 	  	<p>Per <span class="code">ifconfig</span> kann man nun die IP Adresse des Serves festellen und im Webbrowser über <span class="code">http://{IP-Adresse}</span> die Basis-Webseite des eigenen Servers öffnen.
 	  	</p>
